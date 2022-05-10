@@ -1,0 +1,25 @@
+$base-color: #FFF0DF;
+$white: #F8FAFD;
+$color: #efe3e2;
+$salmon: #F0C9B3;
+$text: #4b4f56;
+
+.productItem__list{
+    background-color: $color;
+    color:$text;
+    width: 200px;
+    margin: 5px;
+    padding: 25px;
+    h2{
+        height: 53px;
+    }
+    .productItem__img {
+        width: 100%;
+    }
+    .productItem__desc{
+        height: 110px;
+        wdautohl-customtag {
+            font-weight: normal !important;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+$base-color: #FFF0DF;
+$white: #F8FAFD;
+$color: #B4AAA9;
+$salmon: #F0C9B3;
+
+#productList {
+    background-color: $white;
+    color:gray;
+    display: flex;
+    flex-direction: row;
+    .productList__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+}
