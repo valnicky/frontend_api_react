@@ -24,12 +24,18 @@ function ProductList() {
      
     }
 
+    const deleteProduct = (id) => {
+        const newProducts = products.filter((prod) => prod.id !== id)
+        setProducts(newProducts);
+        console.log('delete')
+    }
 
   return (
     <section id="productList">
         <ul className="productList__container">
             {products.map((product)=><ProductItem description={product.description} 
-            src={product.category.image} title={product.title}  price={product.price} key={product.id}/>)}
+            src={product.category.image} title={product.title}  price={product.price} key={product.id}
+            deleteProduct={()=>deleteProduct(product.id)}/>)}
         </ul>
     </section>
   )

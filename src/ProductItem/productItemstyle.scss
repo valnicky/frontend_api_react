@@ -10,9 +10,19 @@ $text: #4b4f56;
     width: 200px;
     margin: 5px;
     padding: 25px;
-    h2{
-        height: 53px;
+    .productItem__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 23px;
+        h2{
+            height: 53px;
+        }
+        .productItem__del {
+            font-weight: bold;
+        }
     }
+    
     .productItem__img {
         width: 100%;
     }
